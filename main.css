@@ -14,5 +14,11 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    
+
+}
+
+ol, ul, img, p {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
 }
