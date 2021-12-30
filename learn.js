@@ -13,20 +13,37 @@
 // window.alert('Angka favorit saya adalah : ' + myNumber)
 // window.alert(`Angka favorit saya adalah : ${myNumber}`)
 
-// Melakukan operasi sederhana dengan operator aritmatika
+// // Melakukan operasi sederhana dengan operator aritmatika
+
+// // membuat variabel
+// let x = 13
+// let y = 16
+
+// // menampilkan informasi ke console
+// console.log(x, y)
+// console.log('x + y =', x + y)
+// console.log('x - y =', x - y)
+// console.log('x * y =', x * y)
+// console.log('x / y =', x / y)
+// console.log('x % y =', x % y)
+// console.log('x++ =', x++)
+// console.log('++x =', ++x)
+// console.log('x-- =', x--)
+// console.log('--x =', --x)
+
+// Latihan 5.3. Melakukan operasi sederhana dengan operator perbandingan
 
 // membuat variabel
-let x = 13
-let y = 16
+let a = 28
+let b = 30
 
-// menampilkan informasi ke console
-console.log(x, y)
-console.log('x + y =', x + y)
-console.log('x - y =', x - y)
-console.log('x * y =', x * y)
-console.log('x / y =', x / y)
-console.log('x % y =', x % y)
-console.log('x++ =', x++)
-console.log('++x =', ++x)
-console.log('x-- =', x--)
-console.log('--x =', --x)
+// menampilkan hasil ke console
+console.log(a, b)
+console.log('a > b =', a > b)
+console.log('a < b =', a < b)
+console.log('a >= b =', a >= b)
+console.log('a <= b =', a <= b)
+console.log('a == b =', a == b)
+console.log('a != b =', a != b)
+console.log('a === b =', a === b)
+console.log('a !== b =', a !== b)
