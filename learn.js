@@ -84,53 +84,83 @@
 // console.log("luas segitiga = " + luas_segitiga(4,7))
 // console.log("volume balok = " + volume_balok(2,9,4))
 
-// Latihan 5.6. Bermain dengan Array
+// // Latihan 5.6. Bermain dengan Array
 
-// array dengan nama-nama hewan
-var animals = ["kucing", "harimau", "gajah", "burung", "ikan paus"];
+// // array dengan nama-nama hewan
+// var animals = ["kucing", "harimau", "gajah", "burung", "ikan paus"];
 
-// menampilkan array
-console.log("data array belum diubah")
-console.log(animals)
+// // menampilkan array
+// console.log("data array belum diubah")
+// console.log(animals)
 
-// ganti elemen array di index 1
-animals[1] = "merpati";
+// // ganti elemen array di index 1
+// animals[1] = "merpati";
 
-// menampilkan array ke console
-console.log("data array setelah diubah")
-console.log(animals)
+// // menampilkan array ke console
+// console.log("data array setelah diubah")
+// console.log(animals)
 
-// menambahkan item baru ke array
-animals.push("tikus")
+// // menambahkan item baru ke array
+// animals.push("tikus")
 
-// menampilkan array ke console
-console.log("item baru ditambahkan")
-console.log(animals)
+// // menampilkan array ke console
+// console.log("item baru ditambahkan")
+// console.log(animals)
 
-console.log("menghilangkan data")
-console.log(animals.pop())
-console.log(animals)
-console.log("jumlah data = "+ animals.length)
+// console.log("menghilangkan data")
+// console.log(animals.pop())
+// console.log(animals)
+// console.log("jumlah data = "+ animals.length)
 
-// menambahkan data array menggunakan unshift()
-animals.unshift("kerbau")
+// // menambahkan data array menggunakan unshift()
+// animals.unshift("kerbau")
 
-// menampilkan data array
-console.log("menampilkan data array menggunakan unshift()")
-console.log(animals)
+// // menampilkan data array
+// console.log("menampilkan data array menggunakan unshift()")
+// console.log(animals)
 
-// menghilangkan data pertama array menggunakan shift()
-console.log("menghilangkan data pertama menggunakan shift")
-console.log(animals.shift())
+// // menghilangkan data pertama array menggunakan shift()
+// console.log("menghilangkan data pertama menggunakan shift")
+// console.log(animals.shift())
 
-// mengurutkan data array menggunakan sort()
-console.log("mengurutkan data array menggunakan sort")
-console.log(animals.sort())
+// // mengurutkan data array menggunakan sort()
+// console.log("mengurutkan data array menggunakan sort")
+// console.log(animals.sort())
 
-// mengurutkan data array tapi terbalik menggunakan reverse()
-console.log("mengurutkan data array menggunakan reverse")
-console.log(animals.reverse())
+// // mengurutkan data array tapi terbalik menggunakan reverse()
+// console.log("mengurutkan data array menggunakan reverse")
+// console.log(animals.reverse())
 
-// menampilkan data array
-console.log("data array")
-console.log(animals)
+// // menampilkan data array
+// console.log("data array")
+// console.log(animals)
+
+// Latihan 5.7. Bermain dengan Objek
+
+// objek dengan data laptop
+
+let laptop = {
+    id_laptop : 1 ,
+    nama_laptop : "HP Laptop 15-ef0xxx",
+    processor : "AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx 2.10 GHz",
+    ram : "8 GB",
+    rom : "256 GB",
+    harga : 9000000,
+    diskon : function () {
+        return this.harga * 8/100
+    },
+    hargaSetelahDiskon : function () {
+        return this.harga - this.diskon()
+    }
+}
+
+// menampilkan objek
+console.log("nama laptop = " + laptop.nama_laptop);
+
+console.log("processor : "+ laptop["processor"])
+
+console.log("harga laptop = Rp" + laptop["harga"]);
+
+console.log("diskon = Rp"+ laptop.diskon());
+
+console.log("harga setelah diskon = Rp"+ laptop.hargaSetelahDiskon());
